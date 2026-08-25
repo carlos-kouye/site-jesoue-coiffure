@@ -1,0 +1,221 @@
+/* Jesoué Coiffure — admin.css
+   Thème CLAIR par défaut | Couleurs directes — zéro variables CSS */
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { font-size: 16px; }
+
+body {
+  background-color: #f7f6f4;
+  color: #1a1a1a;
+  font-family: 'Inter', system-ui, sans-serif;
+  line-height: 1.6;
+}
+
+h1, h2, h3 { font-family: 'Playfair Display', Georgia, serif; }
+
+button { font-family: inherit; cursor: pointer; }
+
+/* ÉCRAN DE CONNEXION */
+.connexion-ecran {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #1a1a1a, #2c2c2c);
+}
+
+.connexion-carte {
+  background-color: #ffffff;
+  border-radius: 0.9rem;
+  padding: 2.5rem 2rem;
+  max-width: 24rem;
+  width: 100%;
+  text-align: center;
+}
+
+.connexion-titre { font-size: 1.5rem; font-weight: 700; margin-bottom: 0.2rem; }
+.connexion-soustitre { color: #5a5a5a; font-size: 0.88rem; margin-bottom: 1.8rem; }
+
+.champ-groupe { margin-bottom: 1rem; text-align: left; }
+.champ-label { display: block; font-size: 0.82rem; font-weight: 600; margin-bottom: 0.35rem; }
+
+.champ-input {
+  width: 100%;
+  padding: 0.7rem 0.9rem;
+  border-radius: 0.5rem;
+  border: 1.5px solid #d8d8d8;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+}
+.champ-input:focus { outline: none; border-color: #c9a24b; }
+
+.connexion-erreur { color: #d9534f; font-size: 0.82rem; min-height: 1.2rem; margin-bottom: 0.6rem; }
+
+.connexion-btn { width: 100%; justify-content: center; margin-top: 0.4rem; }
+
+/* BOUTONS */
+.bouton-principal, .bouton-secondaire {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.65rem 1.3rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 0.85rem;
+  border: 1.5px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.bouton-principal {
+  background: linear-gradient(135deg, #c9a24b, #dab766);
+  color: #fff;
+}
+.bouton-principal:hover { transform: translateY(-1px); }
+
+.bouton-secondaire { background: transparent; color: #1a1a1a; border-color: #d8d8d8; }
+.bouton-secondaire:hover { border-color: #c9a24b; color: #c9a24b; }
+
+/* APP ADMIN */
+.admin-app--cachee { display: none; }
+
+.admin-header { background-color: #1a1a1a; padding: 1rem 1.5rem; }
+.admin-header-inner {
+  max-width: 60rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.admin-header-titre { color: #ffffff; font-family: 'Playfair Display', Georgia, serif; font-weight: 600; font-size: 1.1rem; }
+.admin-header .bouton-secondaire { color: #ffffff; border-color: #444444; }
+
+.admin-main { max-width: 68rem; margin: 0 auto; padding: 2rem 1.5rem 4rem; display: flex; gap: 2rem; align-items: flex-start; }
+
+/* MENU LATÉRAL */
+.admin-sidebar {
+  flex: 0 0 14rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  position: sticky;
+  top: 2rem;
+}
+
+.onglet-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.8rem 1.1rem;
+  border-radius: 0.6rem;
+  border: 1.5px solid #d8d8d8;
+  background: #ffffff;
+  font-weight: 600;
+  font-size: 0.88rem;
+  color: #5a5a5a;
+  text-align: left;
+  width: 100%;
+}
+.onglet-btn--actif { border-color: #c9a24b; color: #c9a24b; background: #fdf8ee; }
+.onglet-btn i { width: 1.1rem; }
+
+.badge-nouveau {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.3rem;
+  height: 1.3rem;
+  padding: 0 0.35rem;
+  border-radius: 999px;
+  background-color: #e0475a;
+  color: #ffffff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  margin-left: auto;
+}
+.badge-nouveau.badge-nouveau--vide { display: none; }
+
+.admin-contenu { flex: 1; min-width: 0; }
+
+.onglet-contenu--cachee { display: none; }
+
+/* LISTE RÉSERVATIONS / PRESTATIONS */
+.admin-vide { color: #999999; font-size: 0.9rem; padding: 1.5rem; text-align: center; }
+
+.carte-reservation {
+  background-color: #ffffff;
+  border-radius: 0.7rem;
+  border: 1.5px solid #e6e6e6;
+  padding: 1.2rem 1.4rem;
+  margin-bottom: 0.9rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.carte-reservation--nouveau { border-left: 4px solid #e0475a; }
+
+.reservation-infos p { font-size: 0.86rem; margin-bottom: 0.2rem; }
+.reservation-infos strong { font-weight: 700; }
+
+.reservation-statut {
+  display: inline-block;
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.reservation-statut--nouveau { background-color: #fce4e6; color: #c0304a; }
+.reservation-statut--vu { background-color: #fff4d9; color: #b8860b; }
+.reservation-statut--confirme { background-color: #dff2e1; color: #2e7d32; }
+
+.reservation-actions { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+
+.bouton-contact {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 1rem;
+}
+.bouton-contact--appel { background-color: #1a1a1a; }
+.bouton-contact--whatsapp { background-color: #25d366; }
+
+/* GESTION DES PRESTATIONS */
+.form-prestation { background-color: #ffffff; border-radius: 0.7rem; padding: 1.4rem; margin-bottom: 1.6rem; border: 1.5px solid #e6e6e6; }
+.form-prestation h3 { font-size: 1rem; margin-bottom: 0.9rem; }
+.form-ligne { display: flex; flex-wrap: wrap; gap: 0.7rem; }
+.form-ligne .champ-input { flex: 1; min-width: 8rem; }
+
+.carte-prestation-admin {
+  background-color: #ffffff;
+  border-radius: 0.6rem;
+  border: 1.5px solid #e6e6e6;
+  padding: 0.9rem 1.2rem;
+  margin-bottom: 0.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+}
+.prestation-admin-nom { font-weight: 600; font-size: 0.9rem; }
+.prestation-admin-details { font-size: 0.8rem; color: #5a5a5a; }
+.prestation-admin-prix { font-weight: 700; color: #c9a24b; }
+
+/* RESPONSIVE */
+@media (max-width: 40rem) {
+  .admin-main { flex-direction: column; }
+  .admin-sidebar { flex-direction: row; position: static; width: 100%; }
+  .onglet-btn { flex: 1; justify-content: center; }
+  .carte-reservation { flex-direction: column; align-items: flex-start; }
+  .form-ligne { flex-direction: column; }
+  .form-ligne .champ-input { width: 100%; }
+}

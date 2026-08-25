@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Réserver — Jesoué Coiffure</title>
+  <meta name="description" content="Réservez votre rendez-vous chez Jesoué Coiffure à Cotonou : choisissez vos prestations, votre créneau, et confirmez.">
+
+  <link rel="icon" type="image/png" href="img/logo-coif.jpg">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/reservation.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="nav-conteneur">
+      <a href="index.html" class="nav-logo">
+        <img src="img/logo-coif.jpg" alt="Logo Jesoué Coiffure" class="nav-logo-img">
+        <span class="nav-logo-nom">Jesoué Coiffure</span>
+      </a>
+
+      <nav class="nav-capsule-wrap">
+        <a href="index.html" class="nav-lien">Accueil</a>
+        <a href="index.html#galerie" class="nav-lien">Galerie</a>
+        <a href="services.html" class="nav-lien">Prestations</a>
+        <a href="produits.html" class="nav-lien">Produits</a>
+        <a href="reservation.html" class="nav-lien nav-lien--actif">Réservation</a>
+        <a href="index.html#contact" class="nav-lien">Contact</a>
+      </nav>
+
+      <div class="nav-droite">
+        <button class="nav-outil-btn" id="themeToggle" aria-label="Changer de thème">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="hamburger" id="burgerBtn" aria-label="Ouvrir le menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="nav-mobile" id="navMobile">
+      <a href="index.html" class="nav-mobile-lien">Accueil</a>
+            <a href="index.html#galerie" class="nav-mobile-lien">Galerie</a>
+      <a href="services.html" class="nav-mobile-lien">Prestations</a>
+      <a href="produits.html" class="nav-mobile-lien">Produits</a>
+      <a href="reservation.html" class="nav-mobile-lien">Réservation</a>
+      <a href="index.html#contact" class="nav-mobile-lien">Contact</a>
+    </div>
+  </header>
+
+  <!-- En-tête de page -->
+  <section class="page-entete">
+    <div class="section-conteneur">
+      <h1>Réservez votre créneau dès maintenant</h1>
+      <p>Nos rendez-vous partent vite choisissez vos prestations et votre horaire en quelques clics.</p>
+    </div>
+  </section>
+
+  <!-- Indicateur d'étapes -->
+  <div class="etapes-indicateur">
+    <div class="etape etape--active" data-etape="1">
+      <span class="etape-numero">1</span>
+      <span class="etape-label">Prestations</span>
+    </div>
+    <div class="etape-trait"></div>
+    <div class="etape" data-etape="2">
+      <span class="etape-numero">2</span>
+      <span class="etape-label">Créneau &amp; coordonnées</span>
+    </div>
+  </div>
+
+  <section class="section reservation-section">
+    <div class="section-conteneur reservation-grille">
+
+      <!-- ÉTAPE 1 : choix des prestations -->
+      <div class="etape-contenu" id="etapeUn">
+        <h2 class="etape-titre">Choisissez vos prestations</h2>
+
+        <div class="liste-choix">
+          <label class="choix-prestation">
+            <input type="checkbox" class="choix-case" data-nom="Coupe classique" data-prix="3000">
+            <span class="choix-nom">Coupe classique</span>
+            <span class="choix-prix">3 000 FCFA</span>
+          </label>
+
+          <label class="choix-prestation">
+            <input type="checkbox" class="choix-case" data-nom="Dégradé (fade)" data-prix="4000">
+            <span class="choix-nom">Dégradé (fade)</span>
+            <span class="choix-prix">4 000 FCFA</span>
+          </label>
+
+          <label class="choix-prestation">
+            <input type="checkbox" class="choix-case" data-nom="Taille de barbe" data-prix="2000">
+            <span class="choix-nom">Taille de barbe</span>
+            <span class="choix-prix">2 000 FCFA</span>
+          </label>
+
+          <label class="choix-prestation">
+            <input type="checkbox" class="choix-case" data-nom="Rasage traditionnel" data-prix="2500">
+            <span class="choix-nom">Rasage traditionnel</span>
+            <span class="choix-prix">2 500 FCFA</span>
+          </label>
+
+          <label class="choix-prestation">
+            <input type="checkbox" class="choix-case" data-nom="Soin visage" data-prix="4000">
+            <span class="choix-nom">Soin visage</span>
+            <span class="choix-prix">4 000 FCFA</span>
+          </label>
+
+          <label class="choix-prestation">
+            <input type="checkbox" class="choix-case" data-nom="Massage" data-prix="5000">
+            <span class="choix-nom">Massage</span>
+            <span class="choix-prix">5 000 FCFA</span>
+          </label>
+
+          <label class="choix-prestation">
+            <input type="checkbox" class="choix-case" data-nom="Locks" data-prix="7000">
+            <span class="choix-nom">Locks</span>
+            <span class="choix-prix">7 000 FCFA</span>
+          </label>
+
+          <label class="choix-prestation">
+            <input type="checkbox" class="choix-case" data-nom="Soin capillaire" data-prix="4500">
+            <span class="choix-nom">Soin capillaire</span>
+            <span class="choix-prix">4 500 FCFA</span>
+          </label>
+        </div>
+
+        <button class="bouton-principal etape-suivante" id="btnEtapeSuivante" disabled>
+          Continuer <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+
+      <!-- ÉTAPE 2 : créneau + coordonnées (cachée au départ) -->
+      <div class="etape-contenu etape-contenu--cachee" id="etapeDeux">
+        <h2 class="etape-titre">Choisissez votre créneau</h2>
+
+        <div class="champ-groupe">
+          <label for="champDate" class="champ-label">Date souhaitée</label>
+          <input type="date" id="champDate" class="champ-input" required>
+        </div>
+
+        <div class="champ-groupe">
+          <label for="champHeure" class="champ-label">Heure souhaitée</label>
+          <select id="champHeure" class="champ-input" required>
+            <option value=""> Choisir un créneau </option>
+            <option value="10:00">10h00</option>
+            <option value="11:00">11h00</option>
+            <option value="12:00">12h00</option>
+            <option value="14:00">14h00</option>
+            <option value="15:00">15h00</option>
+            <option value="16:00">16h00</option>
+            <option value="17:00">17h00</option>
+            <option value="18:00">18h00</option>
+            <option value="19:00">19h00</option>
+            <option value="20:00">20h00</option>
+          </select>
+        </div>
+
+        <h2 class="etape-titre etape-titre--espace">Vos coordonnées</h2>
+
+        <div class="champ-groupe">
+          <label for="champNom" class="champ-label">Nom complet</label>
+          <input type="text" id="champNom" class="champ-input" placeholder="Votre nom" required>
+        </div>
+
+        <div class="champ-groupe">
+          <label for="champTelephone" class="champ-label">Téléphone</label>
+          <input type="tel" id="champTelephone" class="champ-input" placeholder="+229 XX XX XX XX" required>
+        </div>
+
+        <div class="etape-actions">
+          <button class="bouton-secondaire" id="btnEtapePrecedente">
+            <i class="fa-solid fa-arrow-left"></i> Retour
+          </button>
+          <button class="bouton-principal" id="btnConfirmer">Confirmer la réservation</button>
+        </div>
+      </div>
+
+      <!-- RÉCAPITULATIF (visible sur les 2 étapes) -->
+      <aside class="recap">
+        <h3 class="recap-titre">Votre sélection</h3>
+        <ul class="recap-liste" id="recapListe">
+          <li class="recap-vide" id="recapVide">Aucune prestation sélectionnée</li>
+        </ul>
+        <div class="recap-total">
+          <span>Total</span>
+          <span id="recapTotal">0 FCFA</span>
+        </div>
+      </aside>
+
+    </div>
+  </section>
+
+  <!-- Message de confirmation (caché au départ) -->
+  <section class="confirmation-section confirmation-section--cachee" id="confirmationSection">
+    <div class="section-conteneur">
+      <i class="fa-solid fa-circle-check confirmation-icone"></i>
+      <h2>Réservation confirmée !</h2>
+      <p>Merci, votre demande a bien été enregistrée. Nous vous contacterons pour la confirmer.</p>
+      <a href="index.html" class="bouton-principal">Retour à l'accueil</a>
+    </div>
+  </section>
+
+  <!-- Pied de page -->
+  <footer class="footer">
+    <div class="footer-conteneur footer-grille">
+      <div class="footer-colonne footer-marque">
+        <img src="images/logo.png" alt="Logo Jesoué Coiffure" class="footer-logo">
+        <p class="footer-nom">Jesoué Coiffure</p>
+        <p class="footer-accroche">Votre barbershop à Cotonou.</p>
+      </div>
+
+      <div class="footer-colonne">
+        <h3 class="footer-titre-colonne">Navigation</h3>
+        <a href="index.html">Accueil</a>
+        <a href="services.html">Prestations</a>
+        <a href="index.html#galerie">Galerie</a>
+        <a href="produits.html">Produits</a>
+      </div>
+
+      <div class="footer-colonne">
+        <h3 class="footer-titre-colonne">Contact</h3>
+        <p><i class="fa-solid fa-location-dot"></i> Fidjrossè, Cotonou</p>
+        <p><i class="fa-solid fa-phone"></i> +229 01 00 00 00 00</p>
+        <p><i class="fa-solid fa-envelope"></i> contact@elegancebarber.bj</p>
+      </div>
+
+      <div class="footer-colonne">
+        <h3 class="footer-titre-colonne">Suivez-nous</h3>
+        <div class="footer-reseaux">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bas">
+      <p>&copy; <span id="annee"></span> Jesoué Coiffure. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <!-- Librairie Supabase (doit être chargée avant supabase.js) -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+  <script src="js/supabase.js"></script>
+    
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <script src="js/emailjs.js"></script>
+
+  <script src="js/reservation.js"></script>
+</body>
+</html>

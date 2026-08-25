@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Espace admin — Jesoué Coiffure</title>
+
+  <link rel="icon" type="image/png" href="img/logo-coif.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+
+  <!-- ÉCRAN DE CONNEXION -->
+  <section class="connexion-ecran" id="connexionEcran">
+    <div class="connexion-carte">
+      <h1 class="connexion-titre">Jesoué Coiffure</h1>
+      <p class="connexion-soustitre">Espace administrateur</p>
+
+      <div class="champ-groupe">
+        <label for="loginEmail" class="champ-label">Email</label>
+        <input type="email" id="loginEmail" class="champ-input" placeholder="votre@email.com">
+      </div>
+
+      <div class="champ-groupe">
+        <label for="loginMdp" class="champ-label">Mot de passe</label>
+        <input type="password" id="loginMdp" class="champ-input" placeholder="••••••••">
+      </div>
+
+      <p class="connexion-erreur" id="connexionErreur"></p>
+
+      <button class="bouton-principal connexion-btn" id="btnConnexion">Se connecter</button>
+    </div>
+  </section>
+
+  <!-- TABLEAU DE BORD (caché tant que non connecté) -->
+  <div class="admin-app admin-app--cachee" id="adminApp">
+
+    <header class="admin-header">
+      <div class="admin-header-inner">
+        <span class="admin-header-titre">Jesoué Coiffure — Admin</span>
+        <button class="bouton-secondaire" id="btnDeconnexion">
+          <i class="fa-solid fa-right-from-bracket"></i> Déconnexion
+        </button>
+      </div>
+    </header>
+
+    <main class="admin-main">
+
+      <!-- Menu latéral -->
+      <nav class="admin-sidebar">
+        <button class="onglet-btn onglet-btn--actif" data-onglet="reservations">
+          <i class="fa-solid fa-calendar-check"></i>
+          Réservations
+          <span class="badge-nouveau" id="badgeNouveau">0</span>
+        </button>
+        <button class="onglet-btn" data-onglet="prestations">
+          <i class="fa-solid fa-scissors"></i>
+          Prestations
+        </button>
+      </nav>
+
+      <!-- Contenu -->
+      <div class="admin-contenu">
+        <!-- ONGLET RÉSERVATIONS -->
+        <section class="onglet-contenu" id="ongletReservations">
+          <div class="admin-liste" id="listeReservations">
+            <p class="admin-vide">Chargement des réservations...</p>
+          </div>
+        </section>
+
+        <!-- ONGLET PRESTATIONS -->
+        <section class="onglet-contenu onglet-contenu--cachee" id="ongletPrestations">
+          <form class="form-prestation" id="formAjoutPrestation">
+            <h3>Ajouter une prestation</h3>
+            <div class="form-ligne">
+              <input type="text" id="nouveauNom" placeholder="Nom de la prestation" class="champ-input" required>
+              <input type="text" id="nouvelleCategorie" placeholder="Catégorie (ex: Cheveux)" class="champ-input" required>
+              <input type="number" id="nouveauPrix" placeholder="Prix (FCFA)" class="champ-input" required>
+              <button type="submit" class="bouton-principal">Ajouter</button>
+            </div>
+          </form>
+
+          <div class="admin-liste" id="listePrestations">
+            <p class="admin-vide">Chargement des prestations...</p>
+          </div>
+        </section>
+      </div>
+
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="js/supabase.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>

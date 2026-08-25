@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nos prestations — Jesoué Coiffure</title>
+  <meta name="description" content="Découvrez toutes les prestations d'Jesoué Coiffure à Cotonou : coupes, dégradés, barbe et soins, avec tarifs et détails.">
+
+  <link rel="icon" type="image/png" href="img/logo-coif.jpg">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/services.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="nav-conteneur">
+      <a href="index.html" class="nav-logo">
+        <img src="img/logo-coif.jpg" alt="Logo Jesoué Coiffure" class="nav-logo-img">
+        <span class="nav-logo-nom">Jesoué Coiffure</span>
+      </a>
+
+      <nav class="nav-capsule-wrap">
+        <a href="index.html" class="nav-lien">Accueil</a>
+        <a href="index.html#galerie" class="nav-lien">Galerie</a>
+        <a href="services.html" class="nav-lien nav-lien--actif">Prestations</a>
+        <a href="produits.html" class="nav-lien">Produits</a>
+        <a href="reservation.html" class="nav-lien">Réservation</a>
+        <a href="index.html#contact" class="nav-lien">Contact</a>
+      </nav>
+
+      <div class="nav-droite">
+        <button class="nav-outil-btn" id="themeToggle" aria-label="Changer de thème">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <a href="reservation.html" class="bouton-principal nav-cta">Réserver</a>
+        <button class="hamburger" id="burgerBtn" aria-label="Ouvrir le menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="nav-mobile" id="navMobile">
+      <a href="index.html" class="nav-mobile-lien">Accueil</a>
+      <a href="index.html#galerie" class="nav-mobile-lien">Galerie</a>
+      <a href="services.html" class="nav-mobile-lien">Prestations</a>
+      <a href="produits.html" class="nav-mobile-lien">Produits</a>
+      <a href="reservation.html" class="nav-mobile-lien">Réservation</a>
+      <a href="index.html#contact" class="nav-mobile-lien">Contact</a>
+      <a href="reservation.html" class="bouton-principal nav-mobile-cta">Réserver</a>
+    </div>
+  </header>
+
+  <!-- En-tête de page -->
+  <section class="page-entete">
+    <div class="page-entete-voile"></div>
+    <div class="page-entete-contenu">
+      <h1>Nos prestations</h1>
+      <p>Le détail complet de nos services, tarifs et durées.</p>
+    </div>
+  </section>
+
+  <!-- Navigation rapide entre catégories -->
+  <nav class="ancres-categories">
+    <a href="#cheveux" class="ancre-lien">Cheveux</a>
+    <a href="#barbe" class="ancre-lien">Barbe</a>
+    <a href="#soins" class="ancre-lien">Soins</a>
+  </nav>
+
+  <!-- Catégorie : Cheveux -->
+  <section class="section categorie-section" id="cheveux">
+    <div class="section-conteneur">
+      <div class="categorie-entete">
+        <i class="fa-solid fa-scissors"></i>
+        <h2>Cheveux</h2>
+      </div>
+
+      <div class="liste-fiches">
+        <article class="fiche-prestation" id="coupe-classique">
+          <img src="https://images.unsplash.com/photo-1647140655214-e4a2d914971f?auto=format&fit=crop&w=500&q=70" alt="Coupe classique" class="fiche-image">
+          <div class="fiche-corps">
+            <h3>Coupe classique</h3>
+            <p class="fiche-description">Coupe nette et précise aux ciseaux et à la tondeuse, adaptée à la forme de votre visage et à votre style.</p>
+            <div class="fiche-infos">
+              <span class="fiche-duree"><i class="fa-regular fa-clock"></i> 30 min</span>
+              <span class="fiche-prix">3 000 FCFA</span>
+            </div>
+            <a href="reservation.html" class="bouton-principal fiche-btn">Réserver cette prestation</a>
+          </div>
+        </article>
+
+        <article class="fiche-prestation" id="degrade-fade">
+          <img src="https://images.unsplash.com/photo-1593702275687-f8b402bf1fb5?auto=format&fit=crop&w=500&q=70" alt="Dégradé fade" class="fiche-image">
+          <div class="fiche-corps">
+            <h3>Dégradé (fade)</h3>
+            <p class="fiche-description">Transition fluide et progressive, du plus court sur les côtés au plus long sur le dessus, façon barbershop.</p>
+            <div class="fiche-infos">
+              <span class="fiche-duree"><i class="fa-regular fa-clock"></i> 40 min</span>
+              <span class="fiche-prix">4 000 FCFA</span>
+            </div>
+            <a href="reservation.html" class="bouton-principal fiche-btn">Réserver cette prestation</a>
+          </div>
+        </article>
+
+        <article class="fiche-prestation" id="locks">
+          <img src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186?auto=format&fit=crop&w=500&q=70" alt="Locks" class="fiche-image">
+          <div class="fiche-corps">
+            <h3>Locks</h3>
+            <p class="fiche-description">Entretien et façonnage de locks : reprise des racines, resserrage et mise en forme des longueurs.</p>
+            <div class="fiche-infos">
+              <span class="fiche-duree"><i class="fa-regular fa-clock"></i> 1h30</span>
+              <span class="fiche-prix">7 000 FCFA</span>
+            </div>
+            <a href="reservation.html" class="bouton-principal fiche-btn">Réserver cette prestation</a>
+          </div>
+        </article>
+
+        <article class="fiche-prestation" id="soin-capillaire">
+          <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=500&q=70" alt="Soin capillaire" class="fiche-image">
+          <div class="fiche-corps">
+            <h3>Soin capillaire</h3>
+            <p class="fiche-description">Traitement nourrissant en profondeur pour cheveux secs, abîmés ou fragilisés.</p>
+            <div class="fiche-infos">
+              <span class="fiche-duree"><i class="fa-regular fa-clock"></i> 25 min</span>
+              <span class="fiche-prix">4 500 FCFA</span>
+            </div>
+            <a href="reservation.html" class="bouton-principal fiche-btn">Réserver cette prestation</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Catégorie : Barbe -->
+  <section class="section categorie-section categorie-section--alt" id="barbe">
+    <div class="section-conteneur">
+      <div class="categorie-entete">
+        <i class="fa-solid fa-user-tie"></i>
+        <h2>Barbe</h2>
+      </div>
+
+      <div class="liste-fiches">
+        <article class="fiche-prestation" id="taille-barbe">
+          <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=500&q=70" alt="Taille de barbe" class="fiche-image">
+          <div class="fiche-corps">
+            <h3>Taille de barbe</h3>
+            <p class="fiche-description">Barbe redessinée et structurée, ligne nette tracée au rasoir pour un contour impeccable.</p>
+            <div class="fiche-infos">
+              <span class="fiche-duree"><i class="fa-regular fa-clock"></i> 20 min</span>
+              <span class="fiche-prix">2 000 FCFA</span>
+            </div>
+            <a href="reservation.html" class="bouton-principal fiche-btn">Réserver cette prestation</a>
+          </div>
+        </article>
+
+        <article class="fiche-prestation" id="rasage">
+          <img src="https://images.unsplash.com/photo-1657105052497-f996284ffff8?auto=format&fit=crop&w=500&q=70" alt="Rasage traditionnel" class="fiche-image">
+          <div class="fiche-corps">
+            <h3>Rasage traditionnel</h3>
+            <p class="fiche-description">Rasage au coupe-chou, serviette chaude et soin apaisant après-rasage, pour une peau nette et douce.</p>
+            <div class="fiche-infos">
+              <span class="fiche-duree"><i class="fa-regular fa-clock"></i> 25 min</span>
+              <span class="fiche-prix">2 500 FCFA</span>
+            </div>
+            <a href="reservation.html" class="bouton-principal fiche-btn">Réserver cette prestation</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Catégorie : Soins -->
+  <section class="section categorie-section" id="soins">
+    <div class="section-conteneur">
+      <div class="categorie-entete">
+        <i class="fa-solid fa-spa"></i>
+        <h2>Soins</h2>
+      </div>
+
+      <div class="liste-fiches">
+        <article class="fiche-prestation" id="soin-visage">
+          <img src="https://images.unsplash.com/photo-1600180758890-6b94519a8ba6?auto=format&fit=crop&w=500&q=70" alt="Soin visage" class="fiche-image">
+          <div class="fiche-corps">
+            <h3>Soin visage</h3>
+            <p class="fiche-description">Nettoyage en profondeur et hydratation pour une peau nette, fraîche et reposée.</p>
+            <div class="fiche-infos">
+              <span class="fiche-duree"><i class="fa-regular fa-clock"></i> 30 min</span>
+              <span class="fiche-prix">4 000 FCFA</span>
+            </div>
+            <a href="reservation.html" class="bouton-principal fiche-btn">Réserver cette prestation</a>
+          </div>
+        </article>
+
+        <article class="fiche-prestation" id="massage">
+          <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=500&q=70" alt="Massage" class="fiche-image">
+          <div class="fiche-corps">
+            <h3>Massage</h3>
+            <p class="fiche-description">Moment de détente pour le cuir chevelu, la nuque et les épaules après votre coupe.</p>
+            <div class="fiche-infos">
+              <span class="fiche-duree"><i class="fa-regular fa-clock"></i> 20 min</span>
+              <span class="fiche-prix">5 000 FCFA</span>
+            </div>
+            <a href="reservation.html" class="bouton-principal fiche-btn">Réserver cette prestation</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Appel à l'action final -->
+  <section class="cta-final">
+    <div class="section-conteneur">
+      <h2>Une prestation vous intéresse ?</h2>
+      <p>Réservez votre créneau en quelques clics.</p>
+      <a href="reservation.html" class="bouton-principal">Réserver maintenant</a>
+    </div>
+  </section>
+
+  <!-- Pied de page -->
+  <footer class="footer">
+    <div class="footer-conteneur footer-grille">
+      <div class="footer-colonne footer-marque">
+        <img src="images/logo.png" alt="Logo Jesoué Coiffure" class="footer-logo">
+        <p class="footer-nom">Jesoué Coiffure</p>
+        <p class="footer-accroche">Votre barbershop à Cotonou.</p>
+      </div>
+
+      <div class="footer-colonne">
+        <h3 class="footer-titre-colonne">Navigation</h3>
+        <a href="index.html">Accueil</a>
+        <a href="services.html">Prestations</a>
+        <a href="index.html#galerie">Galerie</a>
+        <a href="produits.html">Produits</a>
+        <a href="reservation.html">Réservation</a>
+      </div>
+
+      <div class="footer-colonne">
+        <h3 class="footer-titre-colonne">Contact</h3>
+        <p><i class="fa-solid fa-location-dot"></i> Fidjrossè, Cotonou</p>
+        <p><i class="fa-solid fa-phone"></i> +229 01 00 00 00 00</p>
+        <p><i class="fa-solid fa-envelope"></i> contact@elegancebarber.bj</p>
+      </div>
+
+      <div class="footer-colonne">
+        <h3 class="footer-titre-colonne">Suivez-nous</h3>
+        <div class="footer-reseaux">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bas">
+      <p>&copy; <span id="annee"></span> Jesoué Coiffure. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="js/services.js"></script>
+</body>
+</html>

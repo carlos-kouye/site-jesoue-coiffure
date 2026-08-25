@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jesoué Coiffure Salon de coiffure homme à Cotonou</title>
+  <meta name="description" content="Jesoué Coiffure, salon de coiffure et barbier homme à Cotonou. Coupes, dégradés, taille de barbe et soins. Réservez votre rendez-vous en ligne.">
+
+  <link rel="icon" type="image/png" href="img/logo-coif.jpg">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/accueil.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="nav-conteneur">
+      <a href="index.html" class="nav-logo">
+        <img src="img/logo-coif.jpg" alt="Logo Jesoué Coiffure" class="nav-logo-img">
+        <span class="nav-logo-nom">Jesoué Coiffure</span>
+      </a>
+
+      <nav class="nav-capsule-wrap">
+        <a href="index.html" class="nav-lien nav-lien--actif">Accueil</a>
+        <a href="index.html#galerie" class="nav-mobile-lien">Galerie</a>
+        <a href="services.html" class="nav-lien">Prestations</a>
+        <a href="produits.html" class="nav-lien">Produits</a>
+        <a href="reservation.html" class="nav-lien">Réservation</a>
+        <a href="index.html#contact" class="nav-lien">Contact</a>
+      </nav>
+
+      <div class="nav-droite">
+        <button class="nav-outil-btn" id="themeToggle" aria-label="Changer de thème">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <a href="reservation.html" class="bouton-principal nav-cta">Réserver</a>
+        <button class="hamburger" id="burgerBtn" aria-label="Ouvrir le menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Menu mobile déroulant -->
+    <div class="nav-mobile" id="navMobile">
+      <a href="index.html" class="nav-mobile-lien">Accueil</a>
+      <a href="index.html#galerie" class="nav-mobile-lien">Galerie</a>
+      <a href="services.html" class="nav-mobile-lien">Prestations</a>
+      <a href="produits.html" class="nav-mobile-lien">Produits</a>
+      <a href="reservation.html" class="nav-mobile-lien">Réservation</a>
+      <a href="index.html#contact" class="nav-mobile-lien">Contact</a>
+      <a href="reservation.html" class="bouton-principal nav-mobile-cta">Réserver</a>
+    </div>
+  </header>
+
+  <!-- Héros -->
+  <section class="hero">
+    <div class="hero-voile"></div>
+    <div class="hero-contenu">
+      <div class="hero-badges">
+        <div class="hero-badge">
+          <span class="hero-badge-nombre">8ans+</span>
+          <span class="hero-badge-libelle">Expérience</span>
+        </div>
+        <div class="hero-badge">
+          <span class="hero-badge-nombre">★★★★★</span>
+          <span class="hero-badge-libelle">Avis Google</span>
+        </div>
+        <div class="hero-badge">
+          <span class="hero-badge-nombre">500+</span>
+          <span class="hero-badge-libelle">Clients</span>
+        </div>
+      </div>
+      <h1 class="hero-titre">L'excellence de la coupe, l'art du barbier</h1>
+      <p class="hero-soustitre">Le barbershop de référence à Cotonou : coupes, dégradés, taille de barbe et soins, réalisés avec passion et précision.</p>
+      <div class="hero-boutons">
+        <a href="reservation.html" class="bouton-principal">Réserver maintenant</a>
+        <a href="services.html" class="bouton-secondaire">Découvrir nos services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services (aperçu en cartes) -->
+  <section class="section" id="services">
+    <div class="section-conteneur">
+      <div class="section-entete">
+        <h2>Nos prestations</h2>
+        <p>Des soins et des coupes adaptés à chaque style, réalisés avec expertise.</p>
+      </div>
+
+      <div class="grille-services">
+        <article class="carte-service carte-service--coupe" data-service-id="coupe-classique">
+          <div class="carte-service-corps">
+            <h3 class="carte-service-titre">Coupe classique</h3>
+            <p class="carte-service-prix">3 000 FCFA</p>
+            <a href="services.html#coupe-classique" class="lien-details">Voir détails <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="carte-service carte-service--degrade" data-service-id="degrade-fade">
+          <div class="carte-service-corps">
+            <h3 class="carte-service-titre">Dégradé (fade)</h3>
+            <p class="carte-service-prix">4 000 FCFA</p>
+            <a href="services.html#degrade-fade" class="lien-details">Voir détails <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="carte-service carte-service--barbe" data-service-id="taille-barbe">
+          <div class="carte-service-corps">
+            <h3 class="carte-service-titre">Taille de barbe</h3>
+            <p class="carte-service-prix">2 000 FCFA</p>
+            <a href="services.html#taille-barbe" class="lien-details">Voir détails <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="carte-service carte-service--barbe" data-service-id="rasage">
+          <div class="carte-service-corps">
+            <h3 class="carte-service-titre">Rasage traditionnel</h3>
+            <p class="carte-service-prix">2 500 FCFA</p>
+            <a href="services.html#rasage" class="lien-details">Voir détails <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="carte-service carte-service--soin" data-service-id="soin-visage">
+          <div class="carte-service-corps">
+            <h3 class="carte-service-titre">Soin visage</h3>
+            <p class="carte-service-prix">4 000 FCFA</p>
+            <a href="services.html#soin-visage" class="lien-details">Voir détails <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="carte-service carte-service--soin" data-service-id="massage">
+          <div class="carte-service-corps">
+            <h3 class="carte-service-titre">Massage</h3>
+            <p class="carte-service-prix">5 000 FCFA</p>
+            <a href="services.html#massage" class="lien-details">Voir détails <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="carte-service carte-service--coupe" data-service-id="locks">
+          <div class="carte-service-corps">
+            <h3 class="carte-service-titre">Locks</h3>
+            <p class="carte-service-prix">7 000 FCFA</p>
+            <a href="services.html#locks" class="lien-details">Voir détails <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="carte-service carte-service--soin" data-service-id="soin-capillaire">
+          <div class="carte-service-corps">
+            <h3 class="carte-service-titre">Soin capillaire</h3>
+            <p class="carte-service-prix">4 500 FCFA</p>
+            <a href="services.html#soin-capillaire" class="lien-details">Voir détails <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+      </div>
+      <div class="services-nav">
+        <button class="services-nav-fleche" id="flecheGauche" aria-label="Prestation précédente">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <span class="services-compteur"><span id="indexActuel">1</span> / <span id="indexTotal">8</span></span>
+        <button class="services-nav-fleche" id="flecheDroite" aria-label="Prestation suivante">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+
+      <div class="services-cta">
+        <a href="services.html" class="bouton-secondaire">Voir tout le catalogue</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Galerie -->
+  <section class="section galerie-section" id="galerie">
+    <div class="section-conteneur">
+      <div class="section-entete">
+        <h2>Nos réalisations</h2>
+        <p>Un aperçu de notre savoir-faire, coupe après coupe.</p>
+      </div>
+
+      <div class="galerie-filtres" id="galerieFiltres">
+        <button class="filtre-btn filtre-btn--actif" data-filtre="tout">Tout</button>
+        <button class="filtre-btn" data-filtre="coupe">Coupes</button>
+        <button class="filtre-btn" data-filtre="degrade">Dégradés</button>
+        <button class="filtre-btn" data-filtre="barbe">Barbe</button>
+        <button class="filtre-btn" data-filtre="soin-visage">Soin visage</button>
+        <button class="filtre-btn" data-filtre="massage">Massage</button>
+      </div>
+
+      <div class="galerie-grille" id="galerieGrille">
+        <div class="galerie-carte" data-categorie="coupe">
+          <img src="img/photo5.jpg" alt="Réalisation coupe" class="galerie-image">
+          <button class="bouton-jaime" aria-label="Ajouter aux favoris" data-jaime="false" data-compte="15">
+            <i class="fa-regular fa-heart"></i>
+            <span class="bouton-jaime-compte">15</span>
+          </button>
+        </div>
+        <div class="galerie-carte" data-categorie="barbe">
+          <img src="img/photo8.png" alt="Réalisation barbe" class="galerie-image">
+          <button class="bouton-jaime" aria-label="Ajouter aux favoris" data-jaime="false" data-compte="22">
+            <i class="fa-regular fa-heart"></i>
+            <span class="bouton-jaime-compte">22</span>
+          </button>
+        </div>
+        <div class="galerie-carte" data-categorie="degrade">
+          <img src="img/photo9.png" alt="Réalisation dégradé" class="galerie-image">
+          <button class="bouton-jaime" aria-label="Ajouter aux favoris" data-jaime="false" data-compte="31">
+            <i class="fa-regular fa-heart"></i>
+            <span class="bouton-jaime-compte">31</span>
+          </button>
+        </div>
+        <div class="galerie-carte" data-categorie="soin-visage">
+          <img src="img/photo1.jpg" alt="Réalisation soin visage" class="galerie-image">
+          <button class="bouton-jaime" aria-label="Ajouter aux favoris" data-jaime="false" data-compte="9">
+            <i class="fa-regular fa-heart"></i>
+            <span class="bouton-jaime-compte">9</span>
+          </button>
+        </div>
+        <div class="galerie-carte" data-categorie="coupe">
+          <img src="img/photo2.jpg" alt="Réalisation coupe" class="galerie-image">
+          <button class="bouton-jaime" aria-label="Ajouter aux favoris" data-jaime="false" data-compte="18">
+            <i class="fa-regular fa-heart"></i>
+            <span class="bouton-jaime-compte">18</span>
+          </button>
+        </div>
+        <div class="galerie-carte" data-categorie="massage">
+          <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=500&q=70" alt="Réalisation massage" class="galerie-image">
+          <button class="bouton-jaime" aria-label="Ajouter aux favoris" data-jaime="false" data-compte="7">
+            <i class="fa-regular fa-heart"></i>
+            <span class="bouton-jaime-compte">7</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- À propos -->
+  <section class="section" id="apropos">
+    <div class="section-conteneur apropos-grille">
+      <div class="apropos-image">
+        <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=700&q=70" alt="Le coiffeur dans son salon">
+      </div>
+      <div class="apropos-contenu">
+        <h2 class="apropos-titre">À propos</h2>
+        <p class="apropos-texte">
+          Passionné par l'art de la coiffure depuis plus de 8 ans, notre coiffeur met tout son
+          savoir-faire au service de votre style. Chaque coupe est pensée pour révéler votre
+          personnalité, avec la précision et le soin d'un vrai rituel de barbier.
+        </p>
+        <div class="apropos-stats">
+          <div class="statistique">
+            <span class="statistique-nombre">8</span>
+            <span class="statistique-libelle">années d'expérience</span>
+          </div>
+          <div class="statistique">
+            <span class="statistique-nombre">500+</span>
+            <span class="statistique-libelle">clients satisfaits</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Avis clients -->
+  <section class="section avis-section">
+    <div class="section-conteneur">
+      <div class="section-entete">
+        <h2>Ce que disent nos clients</h2>
+      </div>
+
+      <div class="avis-grille">
+        <article class="carte-avis">
+          <img src="https://i.pravatar.cc/100?img=12" alt="Client" class="carte-avis-photo">
+          <p class="carte-avis-message">« Toujours satisfait de ma coupe, l'accueil est chaleureux et le travail très soigné. »</p>
+          <p class="carte-avis-nom">Fabrice</p>
+        </article>
+
+        <article class="carte-avis">
+          <img src="https://i.pravatar.cc/100?img=32" alt="Client" class="carte-avis-photo">
+          <p class="carte-avis-message">« Mes tresses tiennent parfaitement plusieurs semaines. Je recommande vivement. »</p>
+          <p class="carte-avis-nom">Odile</p>
+        </article>
+
+        <article class="carte-avis">
+          <img src="https://i.pravatar.cc/100?img=51" alt="Client" class="carte-avis-photo">
+          <p class="carte-avis-message">« Un vrai professionnel, à l'écoute et ponctuel. Mon salon de référence désormais. »</p>
+          <p class="carte-avis-nom">Kévin</p>
+        </article>
+      </div>
+
+      <div class="avis-cta">
+        <a href="https://www.google.com/maps" target="_blank" rel="noopener" class="lien-avis-google">
+          Voir tous les avis sur Google <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Localisation -->
+  <section class="section" id="contact">
+    <div class="section-conteneur localisation-grille">
+      <div class="localisation-infos">
+        <h2 class="localisation-titre">Nous trouver</h2>
+        <p><i class="fa-solid fa-location-dot"></i> Quartier Fidjrossè, Cotonou</p>
+        <p><i class="fa-solid fa-phone"></i> +229 01 00 00 00 00</p>
+        <p class="localisation-horaires-titre"><i class="fa-solid fa-clock"></i> Horaires</p>
+        <ul class="localisation-horaires">
+          <li>Lundi – Samedi : 10h – 21h</li>
+          <li>Dimanche : 14h – 21h</li>
+        </ul>
+        <a href="tel:+22957114087" class="bouton-principal localisation-appel">
+          <i class="fa-solid fa-phone"></i> Appeler le salon
+        </a>
+      </div>
+      <div class="localisation-carte">
+        <iframe
+          src="https://www.google.com/maps?q=Cotonou&output=embed"
+          width="100%"
+          height="350"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section faq-section">
+    <div class="section-conteneur">
+      <div class="section-entete">
+        <h2>Questions fréquentes</h2>
+      </div>
+
+      <div class="faq-liste">
+        <details class="faq-item">
+          <summary>Comment prendre rendez-vous ?</summary>
+          <p>Vous pouvez réserver directement en ligne via notre page de réservation, en choisissant vos prestations et le créneau qui vous convient.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Puis-je annuler ou reporter mon rendez-vous ?</summary>
+          <p>Oui, contactez-nous au moins 2 heures avant votre créneau pour reporter ou annuler sans frais.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Quels sont les moyens de paiement acceptés ?</summary>
+          <p>Nous acceptons les espèces et les paiements mobile money (MTN, Moov).</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Combien de temps dure une prestation ?</summary>
+          <p>Comptez en moyenne 30 à 45 minutes pour une coupe, et jusqu'à 2 heures pour des tresses.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Proposez-vous des produits capillaires à la vente ?</summary>
+          <p>Oui, une sélection de produits d'entretien est disponible directement au salon.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Appel à l'action final -->
+  <section class="cta-final">
+    <div class="section-conteneur">
+      <h2>Prêt(e) à sublimer votre style ?</h2>
+      <p>Réservez votre rendez-vous en quelques clics.</p>
+      <a href="reservation.html" class="bouton-principal">Réserver maintenant</a>
+    </div>
+  </section>
+
+  <!-- Pied de page -->
+  <footer class="footer">
+    <div class="footer-conteneur footer-grille">
+      <div class="footer-colonne footer-marque">
+        <div class="logofoot">
+          <img src="img/logo-coif.jpg" alt="Logo Jesoué Coiffure" class="footer-logo">
+          <p class="footer-nom">Jesoué Coiffure</p>
+        </div>
+        <p class="footer-accroche">Votre salon de coiffure mixte à Cotonou.</p>
+      </div>
+
+      <div class="footer-colonne">
+        <h3 class="footer-titre-colonne">Navigation</h3>
+        <a href="index.html">Accueil</a>
+        <a href="services.html">Services</a>
+        <a href="index.html#galerie">Galerie</a>
+        <a href="index.html#apropos">À propos</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+
+      <div class="footer-colonne">
+        <h3 class="footer-titre-colonne">Contact</h3>
+        <p><i class="fa-solid fa-location-dot"></i> Fidjrossè, Cotonou</p>
+        <p><i class="fa-solid fa-phone"></i> +229 01 00 00 00 00</p>
+        <p><i class="fa-solid fa-envelope"></i> contact@elegancecoiffure.bj</p>
+      </div>
+
+      <div class="footer-colonne">
+        <h3 class="footer-titre-colonne">Suivez-nous</h3>
+        <div class="footer-reseaux">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bas">
+      <p>&copy; <span id="annee"></span> Jesoué Coiffure. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="js/accueil.js"></script>
+</body>
+</html>
