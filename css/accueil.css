@@ -456,12 +456,18 @@ h3 { font-size: 1.05rem; font-weight: 600; }
 .apropos-grille {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 3.5rem;
+  gap: 2.5rem;
   align-items: center;
 }
 
+.apropos-image{
+    width: 300px;          /* largeur fixe */
+    height: 300px; 
+    margin-right: 50%;        /* hauteur = largeur (carré) */
+    border-radius: 50%;    /* rend le conteneur rond */
+    overflow: hidden;      /* cache ce qui dépasse */
+}
 .apropos-image img {
-  border-radius: 0.6rem;
   width: 100%;
   height: 25rem;
   object-fit: cover;
@@ -758,15 +764,15 @@ h3 { font-size: 1.05rem; font-weight: 600; }
 
 .hero { padding: 5.5rem 1.2rem 0; min-height: 98vh; }
 
-.hero-badges { gap: 1.1rem; margin-bottom: 1.2rem; }
+.hero-badges { gap: 1.1rem; margin-bottom: 5.2rem; margin-top: -18px; }
 
 .hero-badge-nombre { font-size: 1.05rem; }
 
 .hero-badge-libelle { font-size: 0.62rem; }
 
-.hero-titre { font-size: 1.6rem; }
+.hero-titre { font-size: 1.6rem; margin-top: 25PX; margin-bottom: 20PX; }
 
-.hero-soustitre { font-size: 1rem; }
+.hero-soustitre { font-size: 0.7rem; }
 
 .hero-boutons {
   flex-direction: column;
@@ -775,7 +781,7 @@ h3 { font-size: 1.05rem; font-weight: 600; }
   gap: 0.7rem;
 }
 
-.hero-boutons .bouton-principal { width: 100%; justify-content: center; }
+.hero-boutons .bouton-principal { width: 70%; justify-content: center; padding: 0.55rem 1.1rem; }
 
 .hero-boutons .bouton-secondaire {
   width: auto;
@@ -850,7 +856,7 @@ h3 { font-size: 1.05rem; font-weight: 600; }
 }
 
 @media (max-width: 20rem) {/* 320px */
-  html { font-size: 14px; }
+html { font-size: 14px; }
 
 .nav-conteneur { gap: 0.6rem; }
 
