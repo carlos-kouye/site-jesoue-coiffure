@@ -294,7 +294,7 @@ h3 { font-size: 1.05rem; font-weight: 600; }
   color: #ffffff;
 }
 
-.hero-titre { margin-bottom: 1rem; color: #ffffff; }
+.hero-titre { margin-bottom: 2rem; color: #ffffff; }
 
 .hero-soustitre { font-size: 1.05rem; margin-bottom: 2rem; opacity: 0.95; }
 
@@ -753,7 +753,7 @@ h3 { font-size: 1.05rem; font-weight: 600; }
 }
 
 @media (max-width: 48rem) {/* 768px */
-  .nav-capsule-wrap { display: none; }
+.nav-capsule-wrap { display: none; }
 
 .nav-cta { display: none; }
 
@@ -764,13 +764,13 @@ h3 { font-size: 1.05rem; font-weight: 600; }
 
 .hero { padding: 5.5rem 1.2rem 0; min-height: 98vh; }
 
-.hero-badges { gap: 1.1rem; margin-bottom: 5.2rem; margin-top: -18px; }
+.hero-badges { gap: 1.1rem; margin-bottom: 5.2rem; margin-top: -35px; }
 
 .hero-badge-nombre { font-size: 1.05rem; }
 
 .hero-badge-libelle { font-size: 0.62rem; }
 
-.hero-titre { font-size: 1.6rem; margin-top: 25PX; margin-bottom: 20PX; }
+.hero-titre { font-size: 1.9rem; margin-top: -25PX; margin-bottom: 28PX; }
 
 .hero-soustitre { font-size: 0.7rem; }
 
@@ -796,6 +796,13 @@ h3 { font-size: 1.05rem; font-weight: 600; }
 .carte-service { flex-basis: 15.5rem; }
 
 .galerie-grille { grid-template-columns: 1fr; gap: 1rem; }
+
+.localisation-carte iframe{
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  right: 50%;
+}
 
 .footer-grille {
   grid-template-columns: 1fr;
@@ -849,7 +856,7 @@ h3 { font-size: 1.05rem; font-weight: 600; }
 
 .nav-logo-nom { font-size: 0.9rem; }
 
-.hero-titre { font-size: 1.25rem; }
+.hero-titre { font-size: 1.15rem; margin-bottom: 5%; margin-top: -15%; }
 
 .carte-service { flex-basis: 14rem; }
 
