@@ -86,10 +86,11 @@ h3 { font-size: 1.05rem; font-weight: 600; }
 .bouton-principal {
   background: linear-gradient(135deg, #c9a24b, #dab766);
   color: #fff;
-  box-shadow: 0 4px 14px rgba(201,162,75,0.32);
+  border-color: #ffffff 5px;
+  box-shadow: 1 4px 14px rgba(255, 241, 211, 0.426);
 }
 
-.bouton-principal:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(201,162,75,0.4); }
+.bouton-principal:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(255, 244, 221, 0.4); }
 
 .bouton-secondaire {
   background: transparent;
@@ -241,7 +242,7 @@ h3 { font-size: 1.05rem; font-weight: 600; }
 /* 5. HÉROS */
 .hero {
   position: relative;
-  min-height: 86vh;
+  min-height: 98vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -255,14 +256,14 @@ h3 { font-size: 1.05rem; font-weight: 600; }
 .hero-voile {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.62) 100%);
+  background: linear-gradient(180deg, rgba(0,0,0,0.45) 0%, rgba(235, 157, 32, 0.589) 100%);
 }
 
 .hero-badges {
   display: flex;
   justify-content: center;
   gap: 2rem;
-  margin-bottom: 1.6rem;
+  margin-bottom: 1.8rem;
 }
 
 .hero-badge {
@@ -293,9 +294,9 @@ h3 { font-size: 1.05rem; font-weight: 600; }
   color: #ffffff;
 }
 
-.hero-titre { margin-bottom: 0.9rem; color: #ffffff; }
+.hero-titre { margin-bottom: 1rem; color: #ffffff; }
 
-.hero-soustitre { font-size: 1.05rem; margin-bottom: 1.8rem; opacity: 0.95; }
+.hero-soustitre { font-size: 1.05rem; margin-bottom: 2rem; opacity: 0.95; }
 
 .hero-boutons {
   display: flex;
