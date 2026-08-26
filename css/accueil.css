@@ -256,7 +256,7 @@ h3 { font-size: 1.05rem; font-weight: 600; }
 .hero-voile {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(0,0,0,0.45) 0%, rgba(235, 157, 32, 0.589) 100%);
+  background: linear-gradient(180deg, rgba(0,0,0,0.45) 0%, rgba(235, 157, 32, 0.359) 100%);
 }
 
 .hero-badges {
